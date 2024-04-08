@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.hlx.page/
-- Live: https://main--{repo}--{owner}.hlx.live/
+- Preview: https://main--summit-2024--dkuntze.hlx.page/
+- Live: https://main--summit-2024--dkuntze.hlx.live/
 
 ## Installation
 
