@@ -248,3 +248,8 @@
     letter-spacing: 7px;
   }
 }
+
+div.v2-hero-wrapper.full-width {
+  width: 100%;
+  padding: 0;
+}

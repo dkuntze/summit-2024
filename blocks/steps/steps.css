@@ -1,0 +1,19 @@
+.step-counter {
+    width: 250px;
+    border: 2px solid #000;
+    margin: 5px;
+}
+
+.step-counter > div:first-child {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+}
+
+.step-counter > div:last-child {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
