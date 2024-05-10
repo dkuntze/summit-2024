@@ -8,12 +8,13 @@ sampleRUM('cwv');
 
 await loadScript('https://www.gstatic.com/charts/loader.js', { defer: true });
 
+// eslint-disable-next-line no-undef
 google.charts.load('current', {
   packages: ['geochart'],
 });
-google.charts.setOnLoadCallback(drawRegionsMap);
 
 function drawRegionsMap() {
+  // eslint-disable-next-line no-undef
   const data = google.visualization.arrayToDataTable([
     ['Country', 'Attendees / Registrants'],
     ['Germany', 24],
@@ -35,7 +36,11 @@ function drawRegionsMap() {
   ]);
 
   const options = {};
+  // eslint-disable-next-line no-undef
   const chart = new google.visualization.GeoChart(document.querySelector('.infographic'));
 
   chart.draw(data, options);
 }
+
+// eslint-disable-next-line no-undef
+google.charts.setOnLoadCallback(drawRegionsMap);

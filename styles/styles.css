@@ -1,4 +1,4 @@
-/* stylelint-disable string-quotes */
+/* stylelint-disable string-quotes, selector-class-pattern, no-descending-specificity */
 /* stylelint-disable number-max-precision */
 
 /*
@@ -284,13 +284,16 @@ blockquote {
 }
 
 a:any-link {
-  color: var(--c-cta-blue-default);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
   color: var(--c-cta-blue-hover);
+}
+
+div.section a:hover {
+  text-decoration: underline;
 }
 
 :is(h1, h2, h3, h4, h5, h6) a:any-link {
@@ -949,7 +952,6 @@ main.blue-contract .section.section-with-title p {
   font-weight: 100;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .redesign-v2 .section {
   padding: var(--section-padding);
   background-color: var(--background-color);
@@ -966,13 +968,11 @@ main.blue-contract .section.section-with-title p {
   padding-top: 0;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .redesign-v2 .section > div {
   padding: var(--section-div-padding);
   margin: auto;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .redesign-v2 .modal-content {
   --section-padding: 0;
   --section-div-padding-horizontal: 16px;
@@ -989,7 +989,6 @@ main.blue-contract .section.section-with-title p {
   margin: -24px 0;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .redesign-v2 .modal-content .section--black-background,
 .redesign-v2 .modal-content .section--gray-background,
 .redesign-v2 .modal-content .section--black-background + .section:not(.section--black-background,
@@ -1006,7 +1005,6 @@ main.blue-contract .section.section-with-title p {
 }
 
 /* Section Background colors */
-/* stylelint-disable-next-line no-descending-specificity */
 .redesign-v2 .section--black-background {
   --media-background: var(--c-grey-900);
   --text-color: var(--c-white);
@@ -1021,7 +1019,6 @@ main.blue-contract .section.section-with-title p {
   padding-top: 80px;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .redesign-v2 .section--gray-background {
   --text-color: var(--c-main-black);
   --card-background: var(--c-white);
@@ -1469,7 +1466,6 @@ main.blue-contract .section.section-with-title p {
   align-items: center;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .v2-video__playback-button .icon svg,
 .v2-video__mute-controls .icon svg {
   width: 32px;
@@ -1541,7 +1537,6 @@ main.blue-contract .section.section-with-title p {
     padding-right: 32px;
   }
 
-  /* stylelint-disable-next-line no-descending-specificity */
   .redesign-v2 .section div.full-width {
     margin: 0;
   }
@@ -1709,11 +1704,6 @@ div.section.timeline > div:only-of-type {
   border: 1px solid #0101;
   margin-bottom: 48px;
 }
-/*
-div.section.timeline > .default-content-wrapper {
-  border: 1px solid #0101;
-}
- */
 
 div.section.timeline > .cards-wrapper {
   border: 1px solid #0101;

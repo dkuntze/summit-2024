@@ -1,3 +1,4 @@
+/* stylelint-disable kebab-case, selector-class-pattern, media-feature-range-notation */
 @keyframes scroll-move {
   0% {
     transform: translateY(16px);
@@ -30,10 +31,6 @@
   overflow: hidden;
   position: relative;
   background-color: var(--c-grey-1);
-}
-
-.v2-hero .h6 {
-
 }
 
 /* Reduce the Hero height by the inpage-navigation height */
