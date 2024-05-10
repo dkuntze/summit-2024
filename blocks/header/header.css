@@ -145,11 +145,11 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  height: 52px;
 }
 
 header nav .nav-brand img {
   width: 45px;
-  padding-top: 20px;
   height: auto;
 }
 
@@ -160,6 +160,7 @@ header nav .nav-sections {
   display: none;
   visibility: hidden;
   background-color: var(--overlay-color);
+  font-family: VolvoBroadProDigital, serif;
 }
 
 header nav[aria-expanded="true"] .nav-sections {
@@ -171,7 +172,7 @@ header nav[aria-expanded="true"] .nav-sections {
 header nav .nav-sections ul  {
   list-style: none;
   padding-left: 0;
-  font-size: var(--body-font-size-s);
+  font-size: 50px;
   font-weight: 500;
 }
 
@@ -228,7 +229,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 2em;
     margin: 0;
-    font-size: var(--body-font-size-xs);
+    font-size: 24px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
